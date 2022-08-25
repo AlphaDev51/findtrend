@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "antfu.unocss",
+    "antfu.iconify",
+    "antfu.goto-alias",
+    "antfu.file-nesting",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "EditorConfig.EditorConfig",
+    "redhat.vscode-yaml"
+  ]
+}

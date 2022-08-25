@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "yaml",
+    "yml",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  "eslint.packageManager": "pnpm",
+  "stylelint.validate": ["css", "scss", "vue"],
+  "css.validate": false,
+  "scss.validate": false,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  }
+}

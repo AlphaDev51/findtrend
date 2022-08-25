@@ -1,0 +1,15 @@
+node_modules/
+.nuxt/
+.nitro/
+.cache/
+.output/
+dist/
+
+!.github/
+!.vscode/
+
+*.log*
+*.d.ts
+
+.env
+pnpm-lock.yaml

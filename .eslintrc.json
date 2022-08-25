@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": [
+    "plugin:yml/standard",
+    "plugin:yml/prettier",
+    "plugin:jsonc/recommended-with-jsonc",
+    "plugin:jsonc/prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "vue"],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["*.yaml", "*.yml"],
+      "parser": "yaml-eslint-parser",
+      "parserOptions": {
+        "defaultYAMLVersion": "1.2"
+      }
+    },
+    {
+      "files": ["*.json", "*.jsonc", "*.json5"],
+      "parser": "jsonc-eslint-parser"
+    },
+    {
+      "files": ["*.test.ts", "*.spec.ts"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
+  "rules": {
+    "no-var": "error",
+    "no-unused-vars": "off",
+    "no-const-assign": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/padding-line-between-blocks": ["error", "always"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@7.9.0",
+  "scripts": {
+    "dev": "nuxt dev -p 3333",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "prepare": "husky install",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "run:eslint": "eslint --fix --cache --cache-location ./node_modules/.cache/eslint/ --ext .ts,.vue,.json,.yaml,.yml .",
+    "run:stylelint": "stylelint --fix --cache --cache-location ./node_modules/.cache/stylelint/ '**/*.{css,scss,vue}'",
+    "lint": "pnpm run:eslint && pnpm run:stylelint",
+    "typecheck": "nuxi typecheck",
+    "format": "prettier -uw --cache ."
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.0"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.1.93",
+    "@nuxt/test-utils-edge": "3.0.0-rc.8-27676327.dae836a",
+    "@testing-library/vue": "^6.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "@unocss/nuxt": "^0.45.7",
+    "@vitest/coverage-c8": "^0.22.0",
+    "@vueuse/core": "^9.1.0",
+    "@vueuse/nuxt": "^9.1.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsonc": "^2.3.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "eslint-plugin-yml": "^1.1.0",
+    "happy-dom": "^6.0.4",
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "msw": "^0.44.2",
+    "nuxt": "3.0.0-rc.8",
+    "postcss-html": "^1.5.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.4",
+    "stylelint": "^14.10.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.22.0",
+    "vue-tsc": "^0.40.1"
+  },
+  "lint-staged": {
+    "*.{ts,vue,json,yaml,yml}": "eslint --fix --cache --cache-location ./node_modules/.cache/eslint/",
+    "*.{css,scss,vue}": "stylelint --fix --cache --cache-location ./node_modules/.cache/stylelint/",
+    "*": "prettier -wu --cache",
+    "*.{test,spec}.ts": "vitest related"
+  }
+}
