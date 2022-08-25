@@ -155,16 +155,16 @@
         <div
           class="mb-5 grid grid-cols-5 gap-4 justify-center items-center text-center lg:w-1/2"
         >
-          <img src="/Group 33.png " class="" alt="" />
-          <img src="/Group 34.png " class="" alt="" />
-          <img src="/Group 35.png " class="" alt="" />
-          <img src="/Group 36.png " class="" alt="" />
-          <img src="/Group 39.png " class="" alt="" />
+          <img src="/Group33.png" class="" alt="" />
+          <img src="/Group34.png" class="" alt="" />
+          <img src="/Group35.png" class="" alt="" />
+          <img src="/Group36.png" class="" alt="" />
+          <img src="/Group39.png" class="" alt="" />
         </div>
         <div class="w-full lg:w-1/3 h-full mb-5">
-          <img src="/tweet 1.png" class="mb-8 " alt="" />
-          <img src="/tweet 2.png" class="mb-8 " alt="" />
-          <img src="/tweet 3.png" class="mb-8 " alt="" />
+          <img src="/tweet1.png" class="mb-8 " alt="" />
+          <img src="/tweet2.png" class="mb-8 " alt="" />
+          <img src="/tweet3.png" class="mb-8 " alt="" />
         </div>
         <div class="flex items-center justify-center py-8">
           <a
